@@ -1,0 +1,13 @@
+[package]
+name = "mysqlite"
+version = "0.1.0"
+authors = ["juanillo"]
+edition = "2018"
+
+[dependencies]
+chrono = "0.4.6"
+time = "0.1.42"
+
+[dependencies.rusqlite]
+version = "0.16.0"
+features = ["bundled","chrono"]
