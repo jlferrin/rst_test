@@ -1,5 +1,14 @@
 use std::env;
 
+// Globals are declared outside all other scopes.
+static LANGUAGE: &str = "Rust";
+const THRESHOLD: i32 = 10;
+
+fn is_big(n: i32) -> bool {
+    // Access constant in some function
+    n > THRESHOLD
+}
+
 fn main() {
 
     let args: Vec<String> = env::args().collect();
@@ -26,6 +35,16 @@ fn main() {
 
 //    println!("config4: {:p}",config4.as_ptr()); // config4 marchó con hola
 //    println!("config5: {:p}",config5.as_ptr()); // config5 marchó con hola
+
+    // Access constant in the main thread
+    let n=16;
+
+    println!("This is {}", LANGUAGE);
+    println!("The threshold is {}", THRESHOLD);
+    println!("{} is {}", n, if is_big(n) { "big" } else { "small" });
+
+    // THRESHOLD = 5; Error! Cannot modify a `const`.
+
 }
 
 fn arg1(args: &[String]) -> &String {

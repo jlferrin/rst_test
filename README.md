@@ -8,7 +8,7 @@ Print tests
 
 ## mystr
 
-Strings/str/slices/ownership tests
+Strings/str/slices/constants/ownership tests
 
 ## myregex
 
@@ -25,4 +25,13 @@ Structs test
 ## mylib
 
 Packages, crates and modules
+
+## myenum
+
+Enum test
+
+## mylist
+
+Linked list example using enum
+
 
