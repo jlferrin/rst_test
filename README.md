@@ -26,12 +26,36 @@ Structs test
 
 Packages, crates and modules
 
+- TODO: More investigation: mylib.lib
+
 ## myenum
 
 Enum test
 
+- TODO: Review
+
 ## mylist
 
 Linked list example using enum
+
+- TODO: Review
+
+## myerror
+
+Error handling 
+
+- TODO: Selecting use case
+
+## myclap
+
+Test clap crater
+
+## mydebug
+
+Test gdb debugging
+
+See: rust_gdb.md
+
+
 
 
